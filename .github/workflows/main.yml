@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install ArchISO
         run: |
+          sudo pacman -Syyu
           pacman -Sy
           pacman --noconfirm -S git archiso
 
